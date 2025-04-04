@@ -7,11 +7,11 @@
         <VerticalStackLayout Padding="20" Spacing="20">
 
             <!-- Header with Rules Button -->
-            <Grid ColumnDefinitions="*,Auto">
-                <!--<Label Text="Rock, Paper, Scissors"
+            <!--<Grid ColumnDefinitions="*,Auto">
+                --><!--<Label Text="Rock, Paper, Scissors"
                        FontSize="24"
                        FontAttributes="Bold"
-                       HorizontalOptions="Center"/>-->
+                       HorizontalOptions="Center"/>--><!--
 
                 <Button Grid.Column="1"
         Text="Rules"
@@ -23,7 +23,7 @@
         TextColor="White"
         CornerRadius="20"
         Padding="0"/>
-            </Grid>
+            </Grid>-->
 
             <Label Text="Score: 0"
                    x:Name="ScoreLabel"
@@ -147,6 +147,20 @@
                     Clicked="PlayAgainClicked"
                     HorizontalOptions="Center"
                     WidthRequest="150"/>
+
+            <Grid Grid.Row="0" Grid.Column="1" HorizontalOptions="End" VerticalOptions="Start"  Margin="0,100,0,0">
+                <Button Text="Rules"
+                Clicked="ShowRulesPopup"
+                WidthRequest="80"
+                BackgroundColor="White"
+                BorderColor="#512BD4"
+                BorderWidth="1"
+                TextColor="#512BD4"
+                CornerRadius="20"
+                Padding="0"/>
+            </Grid>
         </VerticalStackLayout>
+
+   
     </ScrollView>
 </ContentPage>
