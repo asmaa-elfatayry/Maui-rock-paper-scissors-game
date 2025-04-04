@@ -15,11 +15,13 @@ It’s just a small project I worked on for fun as a break from my serious work,
 
 The app allows you to play the classic **Rock-Paper-Scissors** game with a randomly chosen opponent. It is developed using **.NET MAUI**, which makes it easy to deploy and run on multiple platforms such as Windows, Android, and iOS. The game provides a simple, easy-to-use interface for players to choose their move and see the outcome of the game.
 
-## Technologies Used
+## 🛠️ Tech Stack
 
-- **.NET MAUI**: Multi-platform framework for building native apps for Android, iOS, and Windows.
-- **XAML**: Used to design the UI.
-- **C#**: The primary programming language for the game logic.
+- .NET MAUI (Multi-platform App UI)
+- C# 10
+- XAML for UI
+- CommunityToolkit.Maui for enhanced features
+- Visual Studio 2022
 
 ## Features
 
