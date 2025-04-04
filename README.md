@@ -28,6 +28,16 @@ The app allows you to play the classic **Rock-Paper-Scissors** game with a rando
 - Simple and easy-to-use interface for all devices.
 - Basic animations and effects to enhance user experience.
 
+## 📱 Screenshots
+
+### 💻 Desktop View
+
+![Desktop View](./desktop-view.png)
+
+### 📱 Mobile View
+
+![Mobile View](./mobile-view.png)
+
 ## Installation
 
 To run this app locally, follow the instructions below based on your platform.
