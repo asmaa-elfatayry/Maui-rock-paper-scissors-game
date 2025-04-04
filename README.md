@@ -15,6 +15,9 @@ It’s just a small project I worked on for fun as a break from my serious work,
 
 The app allows you to play the classic **Rock-Paper-Scissors** game with a randomly chosen opponent. It is developed using **.NET MAUI**, which makes it easy to deploy and run on multiple platforms such as Windows, Android, and iOS. The game provides a simple, easy-to-use interface for players to choose their move and see the outcome of the game.
 
+📱 **Download the Android APK:**
+[Click here to download the APK from Google Drive](https://drive.google.com/file/d/1X2QWjbHXUIetnClN910a1HRaRATej859/view?usp=sharing)
+
 ## 🛠️ Tech Stack
 
 - .NET MAUI (Multi-platform App UI)
@@ -38,7 +41,10 @@ The app allows you to play the classic **Rock-Paper-Scissors** game with a rando
 
 ### 📱 Mobile View
 
-![Mobile View](./mobile-view.png)
+<p align="left">
+  <img src="./mobile-view.png" alt="Mobile View" width="45%"/>
+  <img src="./rule.jpg" alt="Rule View" width="45%"/>
+</p>
 
 ## Installation
 
