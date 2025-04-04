@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="game_rps.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="20">
+
+            <!-- Header with Rules Button -->
+            <Grid ColumnDefinitions="*,Auto">
+                <!--<Label Text="Rock, Paper, Scissors"
+                       FontSize="24"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"/>-->
+
+                <Button Grid.Column="1"
+        Text="Rules"
+        Clicked="ShowRulesPopup"
+        WidthRequest="80"
+        BackgroundColor="Transparent"
+        BorderColor="White"
+        BorderWidth="2"
+        TextColor="White"
+        CornerRadius="20"
+        Padding="0"/>
+            </Grid>
+
+            <Label Text="Score: 0"
+                   x:Name="ScoreLabel"
+                   FontSize="18"
+                   HorizontalOptions="Center"/>
+
+            <!-- Choices Display Area -->
+            <Grid ColumnDefinitions="*,*" 
+      HorizontalOptions="Center"
+      Padding="20"
+      x:Name="ChoicesDisplayGrid"
+      IsVisible="False"  ColumnSpacing="20">
+
+                <!-- Player's Choice -->
+                <Frame Grid.Column="0"
+           x:Name="PlayerChoiceFrame"
+           BackgroundColor="LightBlue"
+           CornerRadius="30"
+           Padding="5"
+           HeightRequest="65"
+           WidthRequest="65"
+           HorizontalOptions="Center">
+                    <Image x:Name="PlayerChoiceImage" 
+               HeightRequest="50" 
+               WidthRequest="50"/>
+                </Frame>
+
+                <!-- Computer's Choice -->
+                <Frame Grid.Column="1"
+           x:Name="ComputerChoiceFrame"
+           BackgroundColor="LightGray"
+           CornerRadius="30"
+           Padding="5"
+           HeightRequest="65"
+           WidthRequest="65"
+           HorizontalOptions="Center">
+                    <Image x:Name="ComputerChoiceImage" 
+               HeightRequest="50" 
+               WidthRequest="50"/>
+                </Frame>
+            </Grid>
+
+            <Label x:Name="ResultLabel" 
+                   Text="Choose an option!"
+                   FontSize="18" 
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"/>
+
+            <!-- Choice Buttons -->
+            <Grid RowDefinitions="Auto" ColumnDefinitions="*,*,*"
+                  HorizontalOptions="Center" 
+                  Padding="20"
+                  x:Name="ChoiceButtonsGrid"  ColumnSpacing="20">
+
+                <!-- Rock -->
+                <Frame x:Name="RockFrame"
+                       Grid.Row="0" Grid.Column="0" 
+                       BackgroundColor="#dd405d" 
+                       Padding="5" 
+                       CornerRadius="30"
+                       HeightRequest="70" 
+                       WidthRequest="70" 
+                       HorizontalOptions="Center">
+                    <Image Source="icon_rock.png" 
+                           HeightRequest="50" 
+                           WidthRequest="50"
+                           x:Name="RockButton">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="SelectChoice" CommandParameter="Rock"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                </Frame>
+
+                <!-- Paper -->
+                <Frame x:Name="PaperFrame"
+                       Grid.Row="0" Grid.Column="1" 
+                       BackgroundColor="#5671f5" 
+                       Padding="5" 
+                       CornerRadius="30"
+                       HeightRequest="70" 
+                       WidthRequest="70" 
+                       HorizontalOptions="Center">
+                    <Image Source="icon_paper.png" 
+                           HeightRequest="50" 
+                           WidthRequest="50"
+                           x:Name="PaperButton">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="SelectChoice" CommandParameter="Paper"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                </Frame>
+
+                <!-- Scissors -->
+                <Frame x:Name="ScissorsFrame"
+                       Grid.Row="0" Grid.Column="2" 
+                       BackgroundColor="#eca922" 
+                       Padding="5" 
+                       CornerRadius="30"
+                       HeightRequest="70" 
+                       WidthRequest="70" 
+                       HorizontalOptions="Center">
+                    <Image Source="icon_scissors.png" 
+                           HeightRequest="50" 
+                           WidthRequest="50"
+                           x:Name="ScissorsButton">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="SelectChoice" CommandParameter="Scissors"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                </Frame>
+            </Grid>
+
+            <ActivityIndicator x:Name="ThinkingIndicator" 
+                               IsVisible="False"
+                               IsRunning="False"
+                               HorizontalOptions="Center"/>
+
+            <Button x:Name="PlayAgainButton"
+                    Text="Play Again"
+                    IsVisible="False"
+                    Clicked="PlayAgainClicked"
+                    HorizontalOptions="Center"
+                    WidthRequest="150"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

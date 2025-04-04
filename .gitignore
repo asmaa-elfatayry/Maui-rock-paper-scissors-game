@@ -1,0 +1,66 @@
+# General
+bin/
+obj/
+*.user
+*.suo
+*.userprefs
+*.cache
+*.vs/
+.vs/
+.vscode/
+*.swp
+*.swo
+*.DS_Store
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# NuGet Packages
+*.nupkg
+.nuget/
+NuGet.exe
+packages/
+
+# Rider/VS Code
+.idea/
+.vscode/
+
+# MAUI specific
+Resources/Raw/
+*.dsym
+*.ipa
+*.apk
+*.aab
+*.keystore
+*.plist
+
+# User-specific files
+*.user.os
+
+# Local development files
+.localhistory/
+
+# Build results
+[Bb]uild/
+[Bb]uildArtifacts/
+
+# Test results
+[Tt]est[Rr]esult*/
+[Tt]est[Rr]esults*/
+*.trx
+
+# Visual Studio cache files
+# files ending in .cache can be ignored
+*.[Cc]ache

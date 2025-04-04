@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<toolkit:Popup xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="game_rps.RulesPopup"             
+               Size="300,400">
+    <VerticalStackLayout BackgroundColor="White"
+                        Padding="20"
+                        Spacing="15">
+        <Label Text="Game Rules"
+               FontSize="20"
+               FontAttributes="Bold"
+               HorizontalOptions="Center" TextColor="#9880e5"/>
+
+        <Image Source="image_rules.png"
+               Aspect="AspectFit"
+               HeightRequest="250"/>
+
+        <Button Text="Got It!"
+               Clicked="ClosePopup"
+               HorizontalOptions="Center"
+               WidthRequest="100"
+               BackgroundColor="#9880e5"
+               TextColor="White"/>
+    </VerticalStackLayout>
+    </toolkit:Popup>
