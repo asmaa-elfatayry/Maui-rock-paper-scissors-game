@@ -43,7 +43,7 @@ The app allows you to play the classic **Rock-Paper-Scissors** game with a rando
 
 <p align="left">
   <img src="./mobile-view.png" alt="Mobile View" width="45%"/>
-  <img src="./rule.jpg" alt="Rule View" width="45%"/>
+  <img src="./rules.jpg" alt="Rule View" width="45%"/>
 </p>
 
 ## Installation
